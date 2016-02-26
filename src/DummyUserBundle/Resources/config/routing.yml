@@ -1,0 +1,43 @@
+#dummy_user_homepage:
+#    path:     /
+#    defaults: { _controller: DummyUserBundle:Default:index }
+
+dummy_user_homepage:
+    path:     /
+    defaults: 
+      _controller: DummyUserBundle:Default:index
+
+dummy_user_homepage2:
+    path:     /dummy
+    defaults: 
+     _controller: DummyUserBundle:Default:index
+     
+dummy_user_homepage3:
+    path:     /exercice
+    defaults: 
+      _controller: DummyUserBundle:Default:exercice
+
+dummy_user_menu1:
+    path:     /menu1
+    defaults: 
+     _controller: DummyUserBundle:Default:index
+
+dummy_user_menu2:
+    path:     /menu2
+    defaults: 
+     _controller: DummyUserBundle:Default:index
+
+dummy_user_menu3:
+    path:     /menu3
+    defaults: 
+     _controller: DummyUserBundle:Default:index
+
+dummy_formulaire:
+    path: /formulaire
+    defaults :
+        _controller: DummyUserBundle:Default:index
+
+dummy_user_search:
+    path: /recherche
+    defaults :
+        _controller: DummyUserBundle:User:search

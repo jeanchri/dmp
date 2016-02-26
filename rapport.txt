@@ -1,0 +1,6 @@
+AppBundle\Tests\Controller\DefaultController
+ [ ] Index
+
+DummyUserBundle\Tests\Controller\DefaultController
+ [x] Index
+

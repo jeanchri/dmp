@@ -1,0 +1,33 @@
+{# empty Twig template #}
+{% extends '::base.html.twig' %}
+
+{% block stylesheets %}
+    <link href="{{ asset('css/dummy.css') }}" type="text/css" rel="stylesheet" />
+{% endblock %}
+
+{% block body %}
+    {% block header %}
+    {% endblock %}
+
+    {% block menuh %}
+     <ul id="menu_horizontal">
+      <li><a href="{{ path('dummy_user_menu1') }}">Accueil</a></li>
+      <li><a href="{{ path('dummy_user_menu2') }}">News</a></li>
+      <li><a href="{{ path('dummy_user_menu3') }}">Livre d'or</a></li>
+    </ul>
+    {% endblock %}
+
+    {% block contenu %}
+      ceci est mon superbe contenu
+    {% endblock %}
+
+    {% block menud %}
+      ceci est aussi mon superbe contenu
+    {% endblock %}
+
+    {% block footer %}
+      ceci est aussi mon superbe footer
+      {{ "now"|date("d/m/Y") }}
+    {% endblock %}
+
+{% endblock %}
